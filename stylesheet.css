@@ -1,0 +1,147 @@
+/**
+  Copyright (C) Vasyl Martyniuk <support@wpaam.com>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+.feature-example-logo{
+    width: 100%;
+    height: 128px;
+    background:transparent url('images/wpaam.png') no-repeat center;
+    background-size: 128px 128px;
+}
+
+.feature-example-actions{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #CCCCCC;
+}
+
+.feature-example-action{
+    min-width: 24px;
+    height: 46px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+.feature-example-action span{
+    display: block;
+    margin-top: 26px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.feature-example-message-action{
+    background: transparent url('images/message.png') no-repeat center 6px;
+    background-size: 24px 24px;
+}
+
+.feature-example-message-action:hover{
+    background: transparent url('images/message-active.png') no-repeat center 6px;
+    background-size: 24px 24px;
+}
+
+.feature-example-forum-action{
+    background: transparent url('images/talk.png') no-repeat center 0;
+    margin-left: 30px;
+    background-size: 24px 24px;
+}
+
+.feature-example-forum-action:hover{
+    background: transparent url('images/talk-active.png') no-repeat center 0;
+    margin-left: 30px;
+    background-size: 24px 24px;
+}
+
+.feature-example-counter {
+    display:block;
+    margin: 4% auto 0 auto;
+    width: 305px;
+    font-size:2em;
+    line-height:1.2em;
+    -webkit-box-reflect: below -15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(rgba(255,255,255,0.3)));
+}
+
+.feature-example-counter span.digit {
+    background:#161616;
+    background: #3F3F3F; /* Old browsers */
+    background: linear-gradient(bottom, #0A0A0A 0%, #2B2B2B 50%, #3F3F3F 100%);
+    background: -o-linear-gradient(bottom, #0A0A0A 0%, #2B2B2B 50%, #3F3F3F 100%);
+    background: -moz-linear-gradient(bottom, #0A0A0A 0%, #2B2B2B 50%, #3F3F3F 100%);
+    background: -webkit-linear-gradient(bottom, #0A0A0A 0%, #2B2B2B 50%, #3F3F3F 100%);
+    background: -ms-linear-gradient(bottom, #0A0A0A 0%, #2B2B2B 50%, #3F3F3F 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0A0A0A), color-stop(0.5, #2B2B2B), color-stop(1, #3F3F3F));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FF0A0A0A', endColorstr='#FF3F3F3F'); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FF0A0A0A', endColorstr='#FF3F3F3F')"; /* IE8 */
+    zoom:1; -webkit-border-radius:0.1em;
+    -moz-border-radius:0.1em;
+    border-radius:0.1em;
+    background-clip:border;
+    color:#FFF;
+    display:block;
+    float:left;
+    height:54px;
+    margin:0 1px;
+    overflow:hidden;
+    padding:0;
+    position:relative;
+    text-align:center;
+    width:40px;
+}
+
+.feature-example-counter span.digit span {
+    line-height:54px;
+    position:relative;
+    top:0;
+}
+
+.feature-example-counter span.digit hr {
+    border-color: transparent;
+    -webkit-box-shadow: inset 0 2px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 2px 1px rgba(0,0,0,0.5);
+    box-shadow: inset 0 2px 1px rgba(0,0,0,0.5);
+    height: 3px;
+    margin: -2px 0 0 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+}
+
+.feature-example-counter span.separator {
+    display:block;
+    float:left;
+    font-family:Georgia, serif;
+    font-size:0.5em;
+    position:relative;
+    color: #000000;
+    top:0.5em;
+}
+
+.feature-example-counter span.separator hr {
+    display:none;
+}
+
+.clear{
+    line-height: 0;
+    margin:0;
+    padding:0;
+    clear:both;
+}

@@ -1,0 +1,51 @@
+<?php
+/**
+  Copyright (C) Vasyl Martyniuk <support@wpaam.com>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+?>
+<div class="feature-content-container" id="<?php echo self::FEATURE_ID; ?>_content">
+    <div class="feature-example-logo"></div>
+    <p>
+        This is an example of AAM Feature that registerS UI Tab <b>Feature Example</b> 
+        and AAM Object <b>Login Counter</b> that counts how many times current User or all users in current Role
+        logged in to the Admin Backend.
+    </p>
+    <div class="feature-example-counter">
+        <?php
+            $total = $subject->getObject(aam_Control_Object_LoginCounter::UID)->getOption();
+            $counter = array();
+            for ($i = 1; $i <= 9; $i++) {
+                if (($i % 4) === 0) {
+                    $counter[] = '<span class="separator"><span title=",">,</span><hr /></span>';
+                } else {
+                    $cut = $total % 10;
+                    $total = floor($total / 10);
+                    $counter[] = '<span class="digit"><span title="' . $cut . '">' . $cut . '</span><hr /></span>';
+                }
+            }
+            echo implode('', array_reverse($counter));
+        ?>
+    </div>
+    <br class="clear" />
+    <div class="feature-example-actions">
+        <a href="#" class="feature-example-action feature-example-message-action">
+            <span><?php echo __('Email Us', 'aam'); ?></span>
+        </a>
+        <a href="http://wpaam.com/forum" target="_blank" class="feature-example-action feature-example-forum-action">
+            <span><?php echo __('Ask on Forum', 'aam'); ?></span>
+        </a>
+    </div>
+</div>
